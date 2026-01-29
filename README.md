@@ -1,45 +1,40 @@
 # LDC Sensor Hub
 
-![LDC Sensor Hub](Image/Screenshot_1.png)
+Demo video: https://www.youtube.com/watch?v=cCiSEzKsWQc
 
 ## Repository Description (About)
-Аппаратно-программный комплекс на 12 индуктивных датчиков (LDC) с графическим интерфейсом для ПК. Система включает основную плату с микроконтроллером, до 12 сенсорных модулей с печатными катушками и кроссплатформенный GUI для конфигурации, визуализации и записи данных в реальном времени. Предназначена для тестирования, настройки и анализа различных вариантов индуктивных катушек.
+Hardware-software system for 12 inductive sensors (LDC) with a PC GUI. The system includes a main controller board, up to 12 sensor modules with printed coils, and a cross-platform GUI for configuration, visualization, and real-time data logging. Designed for testing, tuning, and analyzing various inductive coil designs.
 
-## Подробное описание проекта
-Данный проект представляет собой законченный аппаратно-программный комплекс (АПК) для работы с 12 индуктивными датчиками на базе LDC-чипов, предназначенный для измерений, тестирования и анализа параметров индуктивных катушек.
+## Project Description
+This project is a complete hardware-software complex for working with 12 inductive sensors based on LDC chips, intended for measurements, testing, and analysis of inductive coil parameters.
 
-Система состоит из основной управляющей платы с микроконтроллером и 12 подключаемых сенсорных плат, каждая из которых содержит печатную катушку. Катушки выполнены в виде отдельных печатных плат с разъёмом и контактной площадкой под колпачок типоразмера 0603, что позволяет легко заменять катушки и проводить эксперименты с различной геометрией и параметрами печатных плат без изменения основной электроники.
+The system consists of a main controller board with a microcontroller and 12 removable sensor boards, each containing a printed coil. The coils are separate PCBs with a connector and a 0603-size pad, allowing easy replacement and experimentation with different coil geometries and PCB parameters without modifying the core electronics.
 
-Микроконтроллер управляет всеми LDC-чипами, осуществляет сбор данных и передаёт их на ПК по интерфейсу USB–UART. Прошивка поддерживает потоковый режим работы (LiveStream), при котором данные со всех 12 каналов передаются в реальном времени, а также предоставляет полный доступ к конфигурационным регистрам LDC-чипов.
+The microcontroller manages all LDC chips, collects measurements, and sends data to the PC via USB–UART. The firmware supports a LiveStream mode that outputs data from all 12 channels in real time and provides full access to LDC configuration registers.
 
-Для работы с системой разработан кроссплатформенный графический интерфейс на Python (PyQt5 + matplotlib). GUI позволяет:
+A cross-platform GUI built with Python (PyQt5 + matplotlib) enables:
 
-- отображать данные до 12 каналов в реальном времени;
-- включать и отключать отдельные графики;
-- настраивать параметры LDC-чипов напрямую из интерфейса;
-- записывать измерения в CSV-файлы для последующего анализа;
-- работать как с онлайн-данными, так и с сохранёнными логами (при необходимости).
+- real-time visualization of up to 12 channels;
+- toggling individual plots on/off;
+- configuring LDC registers directly from the UI;
+- saving measurements to CSV for analysis;
+- working with live data or saved logs when needed.
 
-Проект ориентирован на разработчиков и инженеров, занимающихся сенсорными системами, индуктивными измерениями и экспериментальной электроникой, и может быть использован как платформа для исследований, прототипирования и отладки индуктивных датчиков.
+The project targets developers and engineers working with sensor systems, inductive measurements, and experimental electronics, and can be used as a platform for research, prototyping, and debugging inductive sensors.
 
-## Состав проекта
-- `Programm.exe` — готовое приложение для Windows.
-- `Programm.rar` — архив с приложением.
-- `Instruction.pdf` / `Инструкция.pdf` — инструкции пользователя.
-- `Документация/` — технические документы и даташиты.
-- `Image/` — изображения обложки.
+## Contents
+- `Programm.exe` — Windows application.
 
-## Быстрый запуск
-1. Подключите устройство по USB–UART.
-2. Запустите `Programm.exe`.
-3. Следуйте инструкциям в `Instruction.pdf` / `Инструкция.pdf`.
+## Quick Start
+1. Connect the device via USB–UART.
+2. Run `Programm.exe`.
 
-## Системные требования
+## System Requirements
 - Windows 10/11
-- USB–UART подключение к основной плате
+- USB–UART connection to the controller board
 
-## Лицензия
-Лицензия не указана. Все права защищены, если не указано иное.
+## License
+No license file found. All rights reserved unless stated otherwise.
 
-## Хештеги
+## Hashtags
 #LDC #InductiveSensors #Hardware #DAQ #PyQt5 #Matplotlib #Electronics #SensorHub #Embedded #Instrumentation
