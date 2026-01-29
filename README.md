@@ -3,10 +3,10 @@
 Demo video: https://www.youtube.com/watch?v=cCiSEzKsWQc
 
 ## Repository Description (About)
-Hardware-software system for 12 inductive sensors (LDC) with a PC GUI. The system includes a main controller board, up to 12 sensor modules with printed coils, and a cross-platform GUI for configuration, visualization, and real-time data logging. Designed for testing, tuning, and analyzing various inductive coil designs.
+Windows application for a 12-channel inductive sensor (LDC) system with a PC GUI. The system includes a main controller board, up to 12 sensor modules with printed coils, and a GUI for configuration, visualization, and real-time data logging. Designed for testing, tuning, and analyzing various inductive coil designs.
 
 ## Project Description
-This project is a complete hardware-software complex for working with 12 inductive sensors based on LDC chips, intended for measurements, testing, and analysis of inductive coil parameters.
+This project is a complete hardware-software complex for working with 12 inductive sensors based on LDC chips, intended for measurements, testing, and analysis of inductive coil parameters. The PC application is built for Windows.
 
 The system consists of a main controller board with a microcontroller and 12 removable sensor boards, each containing a printed coil. The coils are separate PCBs with a connector and a 0603-size pad, allowing easy replacement and experimentation with different coil geometries and PCB parameters without modifying the core electronics.
 
@@ -23,7 +23,7 @@ A cross-platform GUI built with Python (PyQt5 + matplotlib) enables:
 The project targets developers and engineers working with sensor systems, inductive measurements, and experimental electronics, and can be used as a platform for research, prototyping, and debugging inductive sensors.
 
 ## Contents
-- `Programm.exe` — Windows application.
+- `Programm.exe` — Windows application installer.
 
 ## Quick Start
 1. Connect the device via USB–UART.
